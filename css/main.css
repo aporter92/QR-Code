@@ -13,3 +13,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.card {
+    display: flex;
+  flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  
+    height: 100vh; 
+}

@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.outfit-bodytext> {
+.outfit-bodytext {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 
 
-.outfit-boldtext> {
+.outfit-boldtext {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .card {
@@ -19,5 +29,18 @@
   flex-direction: column;
     justify-content: center; /* Centers horizontally */
     align-items: center;  
-    height: 100vh; 
+    
+}
+
+.container {
+     display: flex;
+  flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  
+    /*height: 499px;*/
+    width: 320px;
+    background-color: #ffffff;
+    border-radius:10px;
+    padding-top: 16px;
+    padding-bottom: 40px;
 }

@@ -14,6 +14,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 body {
@@ -22,6 +23,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .card {
@@ -33,14 +36,28 @@ body {
 }
 
 .container {
-     display: flex;
+    display: flex;
   flex-direction: column;
     justify-content: center; /* Centers horizontally */
     align-items: center;  
     /*height: 499px;*/
-    width: 320px;
+    width: min(320px, 100%);
+    box-sizing: border-box;
     background-color: #ffffff;
     border-radius:10px;
     padding-top: 16px;
     padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container img {
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+  }
+
+  .container h1,
+  .container p {
+    max-width: 100%;
 }
